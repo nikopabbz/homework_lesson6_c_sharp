@@ -37,8 +37,8 @@ void SetOutput(int[,] array)
 }
 int SumMinColumns(int[,] array)
 {
-    int index1 = 0;
-    int min = array[0, index1];
+    int index = 0;
+    int min = array[0, index];
     int sum = 0;
     for (int i = 0; i < array.GetLength(1); i++)
     {
@@ -50,14 +50,14 @@ int SumMinColumns(int[,] array)
             }
         }
         sum = sum + min;
-        min = array[0, index1+1];
+        min = array[0, index+1];
     }
     return sum;
 }
 int SumMaxLines(int[,] array)
 {
-    int index1 = 0;
-    int max = array[index1, 0];
+    int index = 0;
+    int max = array[index, 0];
     int sum = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -69,7 +69,7 @@ int SumMaxLines(int[,] array)
             }
         }
         sum = sum + max;
-        max = array[index1+1, 0];
+        max = array[index+1, 0];
     }
     return sum;
 }
