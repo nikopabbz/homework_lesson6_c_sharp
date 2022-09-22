@@ -81,3 +81,5 @@ System.Console.WriteLine();
 System.Console.WriteLine($"Сумма максимальных значений по каждой строке = {SumMaxLines(array)}");
 System.Console.WriteLine();
 System.Console.WriteLine($"Сумма минимальных значений по каждому столбцу = {SumMinColumns(array)}");
+System.Console.WriteLine();
+System.Console.WriteLine($"Разность между суммой максимальных значений по каждой строке и минимальных значений по каждому столбцу = {SumMaxLines(array)-SumMinColumns(array)}");
